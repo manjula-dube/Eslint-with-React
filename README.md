@@ -47,3 +47,31 @@ These were your first custom JavaScript and React rules. But you can use common 
 }
 ```
 
+#### Let’s go one step further with extending the rules by another set of rules.
+
+Since you don’t want to specify your own set of rules every time, there are plenty of recommendations out there. You already used one for React. Another one is the Airbnb Style Guide. Airbnb open sourced its own ESLint configuration that everyone can use it in their ESLint configuration.
+
+You have to install the required packages in the root Folder
+
+`npm --save-dev install eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y`
+
+Now you can add Airbnbs’ ESLint configuration to your ESLint configuration. When you have a look at the installed node packages, you can see that the configuration includes JSX and React rules.
+
+```
+{
+  parser: "babel-eslint",
+  "rules": {
+    "max-len": [1, 120, 2, {ignoreComments: true}],
+    "prop-types": [2]
+  },
+  "extends": ["airbnb-base"]
+}
+```
+
+You can see that it is very simple to extend the ESLint rules from someone else. We could use other extensions as well, but at this time the Airbnb Code Style and the according ESLint configuration are very popular and well accepted by developers.
+
+
+
+
+
+
