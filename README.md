@@ -14,6 +14,21 @@ Now you can use the react plugin and specify your first React rule, which says t
 
 In you .eslintrc file do the following
 
+```
+{
+  parser: "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "max-len": [1, 120, 2, {ignoreComments: true}],
+    "prop-types": [2],
+    'no-console': 0, // we are enabling this in the scripts
+		'no-debugger': 0, // we are enabling this in the scripts
+  }
+}
+```
 
+When you start your app, you might see: Definition for rule 'prop-types' was not found. You might want to fix them by defining PropTypes for your React components. It will also error saying that "Unexpected console statement" & "Unexpected debugger statement"
 
 
