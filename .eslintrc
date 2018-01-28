@@ -122,17 +122,7 @@ module.exports = {
 				root: ['./packages'],
 				alias: {
 					comlib: 'comlib/src',
-					modules: 'shared-modules/src',
-					'common-base': 'common-base/src',
-					'common-server': 'common-server/src',
-					'design-framework': 'design-framework/src',
-					'events-client': 'events-client/src',
-					'events-server': 'events-server/src',
-					'movies-client': 'movies-client/src',
-					'movies-server': 'movies-server/src',
-					'babel-client': 'common-base/src/babel/client',
-					'babel-server': 'common-base/src/babel/server',
-					'webpack-common': 'common-base/src/webpack',
+					modules: 'shared-modules/src'
 				},
 			},
 		},
