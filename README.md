@@ -24,7 +24,7 @@ In you .eslintrc file do the following
     "max-len": [1, 120, 2, {ignoreComments: true}],
     "prop-types": [2],
     'no-console': 0, // we are enabling this in the scripts
-		'no-debugger': 0, // we are enabling this in the scripts
+    'no-debugger': 0, // we are enabling this in the scripts
   }
 }
 ```
