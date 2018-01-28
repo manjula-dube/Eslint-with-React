@@ -51,7 +51,9 @@ These were your first custom JavaScript and React rules. But you can use common 
 
 Since you don’t want to specify your own set of rules every time, there are plenty of recommendations out there. You already used one for React. Another one is the Airbnb Style Guide. Airbnb open sourced its own ESLint configuration that everyone can use it in their ESLint configuration.
 
-You have to install the required packages in the root Folder
+You have to install the required packages.
+
+From root folder:
 
 `npm --save-dev install eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y`
 
