@@ -31,4 +31,19 @@ In you .eslintrc file do the following
 
 When you start your app, you might see: Definition for rule 'prop-types' was not found. You might want to fix them by defining PropTypes for your React components. It will also error saying that "Unexpected console statement" & "Unexpected debugger statement"
 
+These were your first custom JavaScript and React rules. But you can use common recommendations from the community. Such presets, like they exist for React, give you a set of rules that everyone uses.
+
+```
+{
+  parser: "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "max-len": [1, 120, 2, {ignoreComments: true}],
+    "prop-types": [2]
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"]
+}
+```
 
